@@ -14,32 +14,6 @@ def person():
     # 'First_name': f_name, 'Phone number': number, "Patronymic" : patronymic,
     # 'Location': location,
     # 'Activity': activity}
-    with open(f'{count}', 'a', encoding='utf8') as file:
+    with open(f'{count}.json', 'a', encoding='utf8') as file:
         file.write(json.dumps(person_dict, ensure_ascii=False))
 
-
-
-    return person_dict.get('Second name')
-
-
-
-
-
-
-
-
-
-    # with open('PhoneBook.json', 'r', encoding= 'utf8') as PB:
-    #     templates = json.load(PB)
-    #
-    #     for id, lastname in templates.items():
-    #         print(id,lastname)
-    #
-    #         person_string = ':'.join(map(str,[int(count), s_name]))
-    #         print(person_string)
-    #         templates[str(count)] = s_name
-    #         print(templates)
-    #
-    #
-    # with open('PhoneBook.json', 'a', encoding='utf8') as PB:
-    #     file.write(json.dumps(templates, ensure_ascii=False))

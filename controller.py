@@ -1,6 +1,7 @@
 import logger as log
 import check as ch
 import add_to_db as adb
+import short_db as sdb
 
 
 def button_click():
@@ -14,8 +15,9 @@ def button_click():
         person = adb.person()
         print(f'Added completed')
 
+    return sdb.create_sdb()
 
 
 
-
-button_click()
+#
+# button_click()
