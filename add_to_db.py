@@ -17,3 +17,4 @@ def person():
     with open(f'{count}.json', 'a', encoding='utf8') as file:
         file.write(json.dumps(person_dict, ensure_ascii=False))
 
+    return person_dict.get('Second name')

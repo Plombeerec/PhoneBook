@@ -24,6 +24,10 @@ def check_regime(inputText):
     return number
 
 
-# def check_input_string(text):
+def check_input_string(text):
+    pass
+
+def check_number():
+    pass
 
 

@@ -1,8 +1,13 @@
-import input as inp
 import add_to_db as adb
-import short_db as sdb
+
 
 def create_id():
+    '''
+    Функция формирует ID строки. При первом запуске создает файл phonebook.txt в котором
+    построчно отображается ID и фамилия, для упрощения поиска. Возможно, вместо файла .txt можно
+    использовать .json файл, но, это сложнее, на мой взгялд.
+    :return: ID, создает phonebook.txt при первом запуске.
+    '''
     id_count = 1
     try:
         with open('phonebook.txt', 'r', encoding="utf-8") as pb:
@@ -17,8 +22,6 @@ def create_id():
     except:
         id_count =1
         with open('phonebook.txt', 'a', encoding="utf-8") as pb:
-            pb.write(f'{id_count} {inp.fs_name()}\n')
+            pb.write(f'{id_count} {adb.person()}\n')
 
-
-    print(f'{id_count} is id')
     return id_count

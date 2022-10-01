@@ -1,6 +1,5 @@
 import logger as log
 import check as ch
-import add_to_db as adb
 import short_db as sdb
 
 
@@ -12,12 +11,12 @@ def button_click():
         log.log_exit()
         exit()
     elif ver == 1:
-        person = adb.person()
+        sdb.create_sdb()
         print(f'Added completed')
+    elif ver ==2:
+        '''запуск режима чтения из БД'''
+        pass
 
-    return sdb.create_sdb()
 
 
 
-#
-# button_click()

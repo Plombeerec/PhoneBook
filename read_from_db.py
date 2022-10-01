@@ -1,8 +1,9 @@
 import json
 
-with open('phonebook.json', encoding='utf-8') as f:
-    capitals_json = f.read()
-
-capitals = json.loads(capitals_json)
-print(capitals)
+def read_from_db():
+    '''
+    Функция должна выводить 1 конкретный контакт по ID из созданного .json файла.
+    :return: print(contact)
+    '''
+    pass
 

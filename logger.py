@@ -1,4 +1,7 @@
 from datetime import datetime as dt
+'''
+Файл честно скопирован из предыдущего ДЗ, написан @ArtemTitov. Надеюсь, он меня простит.
+'''
 
 def log_to_file(arg1, arg2, operation, result):
     path = 'logging.csv'
